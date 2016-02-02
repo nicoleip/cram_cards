@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Decks</title>
+<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+<body>
+
+<div id="container">
+    <header>
+        <div id="head" class="inline-block fleft">
+            <div id="logo" class="float_left">
+                <a id="site-logo" class="pointer"><img src="assets/images/logo2.png" alt="Cram Cards" width="150" height="120"></a>
+            </div>
+            <a class="pointer" id="site-heading" href="index.html"><h1 class="inline-block">Cram Cards*</h1></a>
+        </div>
+        <nav>
+            <ul id="navBar">
+                <li class="float_left pointer"><a id="browse" href="index.html">Browse</a></li>
+                <li class="float_left pointer"><a class="active" id="create" href="create_decks.html">Create decks</a></li>
+                <li  class="float_left pointer"><a id="account" href="login.html">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>    
+<div id="createdeck-container">
+        <section id="createdeck-form" class = "form float_left block border-none">
+        <p class="title">*Create A Deck</p>
+            <form onsubmit="return false">
+                <ul class="form-fields">
+                    <li class="float_left">
+                        <ul>                            
+                            <li>
+                                <label  for="title" class="required font block">
+                                    Set Title:
+                                </label>
+                                <input  type="text" name="title" id="title" value="" maxlength="200" required="">
+                            </li>
+                            <li>
+                                <label class="block font">
+                                    Category:
+                                </label>
+                                <select name="categoryid" id="categories2">
+                                    <option selected></option>
+                                    <option class="ctgry" value="math" selected="selected">Math</option>
+                                    <option class="ctgry" value="science">Science</option>
+                                    <option class="ctgry" value="biology">Biology</option>
+                                    <option class="ctgry" value="medicine">Medicine</option>
+                                    <option class="ctgry" value="technoogies">Technologies</option>
+                                    <option class="ctgry" value="culture">Culture</option>
+                                    <option class="ctgry" value="geography">Geography</option>
+                                    <option class="ctgry" value="history">History</option>
+                                    <option class="ctgry" value="languages">Languages</option>
+                                    <option class="ctgry" value="arts">Arts</option>
+                                     <option class="ctgry" value="environment">Environment</option>
+                                    <option class="ctgry" value="other">Other</option>
+                                </select>
+                            </li>                           
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li id="descriptionBox" class="">
+                                <label for="description" class="font block">
+                                    Description:
+                                </label>
+                                <textarea name="description" id="description" maxlength="2000" cols="1" rows="1"></textarea>
+                            </li>
+                            <li>
+                                <div>
+                                    <input id="create-deck-send" type="submit" value="Create deck"/>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </div>
+
+
+<div id="createcards-container">       
+        <div id="createcards-form" class ="form border-none">
+        <p class="title">*Create Cards</p>
+            <form>
+                <div class="float_left">
+                    <label class="block font">
+                        Front
+                    </label>
+                    <textarea name="front" style="width: 300px;" class="front-card-description" maxlength="2000" cols="1" rows="1"></textarea>
+                </div>
+                <div class="float_left">
+                    <label class="block font">
+                        Back
+                    </label>
+                    <textarea name="back" style="width: 300px;" class="back-card-description" maxlength="2000" cols="1" rows="1"></textarea>
+                </div>
+                <div id="add" class="float_right height-button" class="float_right">
+                    <button  id="add-new-card" type="button">Add new card</button>
+                </div>
+                <div id ="button-send" class="height-button">
+                    <input id="send-cards" type="submit" value="Save cards"/>
+                </div>
+                
+            </form>
+        </div>
+        </div>
+        </article>
+         <footer>        
+        <div class="social">
+            <img class="pointer" src="assets/icons/facebook.png" width="32px" height="32px">
+            <img class="pointer" src="assets/icons/twitter.png" width="32px" height="32px">
+            <img class="pointer" src="assets/icons/google.png" width="32px" height="32px">
+        </div>
+    </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Log In</title>
+<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+<body>
+
+<div id="container">
+    <header>
+        <div id="head" class="inline-block fleft">
+            <div id="logo" class="float_left">
+                <a id="site-logo" class="pointer"><img src="assets/images/logo2.png" alt="Cram Cards" width="150" height="120"></a>
+            </div>
+            <a class="pointer" id="site-heading" href="index.html"><h1 class="inline-block">Cram Cards*</h1></a>
+        </div>
+        <nav>
+            <ul id="navBar">
+                <li class="float_left pointer"><a id="browse" href="index.html">Browse</a></li>
+                <li class="float_left pointer"><a id="create" href="create_decks.html">Create decks</a></li>
+                <li  class="float_left pointer"><a class="active" id="account" href="login.html">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>    
+
+    <div id="login-container" >
+             <section id="login-form" class="form float_right">
+            <form method="" onsubmit="return false">
+                <h1>Login</h1>
+                <div>
+                    <input type="text" placeholder="Username" name="username" required="" id="username"/>
+                    <p></p>
+                </div>
+
+                <div>
+                    <input type="password" placeholder="Password" name="password" required="" id="password"/>
+                    <p id="login-error"></p>
+                </div>
+                <div>
+                    <input  id="send-login" type="submit" value="Log In" />
+                </div>
+
+                <div>
+                            
+                    <a id="signUpButton" style="cursor: pointer" onclick="">Sign up!</a>
+                </div>
+                
+                <div id="apple"></div>
+            </form>
+        </section>
+
+        <section id="registration-form" class="form float_right" style="display:none">
+            <form action="" onsubmit="return false">
+                <h1>Registration</h1>
+                <div>
+                    <input type="text" name="username" placeholder="Username" id="username" required=""/>
+                    <p class="error"></p>
+                </div>
+                <div>
+                    <input type="text" placeholder="First name" required="" name="firstname" id="firstname">
+                    <p class="error"></p>
+
+                </div>
+                <div>
+                    <input type="text" placeholder="Last name" required="" name="lastname" id="lastname">
+                    <p class="error"></p>
+
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="E-mail" required="" id="email" onchange=""/>
+                    <p class="error"></p>
+                </div>
+                <div>
+                    <input type="password" name="password" placeholder="Password" id="password2" required="" onchange=""/>
+                    <p  class="error"></p>
+                </div>
+                <div>
+                    <input type="password" placeholder="Confirm password" id="password3" required="" onchange=""/>
+                    <p  class="error"></p>
+                </div>
+                <div>
+                    <input id="send-registration" type="submit" value="Sign up" />
+                </div>
+                
+            </form><!-- form -->
+        </section>
+        <section id="welcome">
+            
+            <p>Cram cards are a fun way to study and improve the way you expand your knowledge! 
+            If you haven't had the chance to try out this kind of study-technique, this is a great
+            place to start. Go to the 'Browse' tab in the menu and explore a various number of 
+            categories with vast amount of flashcards in them! You can create your own decks of 
+            cards and train your brain the best way possible. If you are not a memeber, click the
+            'Sign Up' button and fill out our registration form, and if you have already signed up,
+            don't waste time looking --> start learning and become a master!<br>
+            Have fun !</p>
+        </section>
+        
+        </div>
+        
+        </article>
+         <footer>        
+        <div class="social">
+            <img class="pointer" src="assets/icons/facebook.png" width="32px" height="32px">
+            <img class="pointer" src="assets/icons/twitter.png" width="32px" height="32px">
+            <img class="pointer" src="assets/icons/google.png" width="32px" height="32px">
+        </div>
+    </footer>
+        
+    </div>
+
+</body>
+</html>
